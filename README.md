@@ -71,13 +71,15 @@ You need to implement **two** detection rules and report which customers (if any
 
 **Detection logic:**
 
-For each customer, look at their **cash transactions** (`cash_deposit` and `cash_withdrawal`) over a **rolling 30-day window**. Flag the customer when **all three** conditions are met:
+For each customer, look at their **cash transactions** (`cash_deposit` and `cash_withdrawal`) over a **rolling 30-day window**. Analyze deposits and withdrawals **separately** — a customer could be structuring deposits, withdrawals, or both.
 
-1. They have **more than one** cash transaction of the same direction (deposit or withdrawal) in the window
-2. **No single** cash transaction in that direction is **>= $10,000**
-3. The **total** of those cash transactions **exceeds $10,000**
+Flag a customer when **all three** conditions are true within a 30-day window:
 
-Analyze deposits and withdrawals **separately** — a customer could be structuring deposits, withdrawals, or both.
+1. **Multiple transactions:** At least 2 cash transactions of the same direction (deposit or withdrawal)
+2. **All under the reporting threshold:** Every individual transaction is **under $10,000** (i.e., no single transaction is $10,000 or more)
+3. **Combined total exceeds the threshold:** The sum of those transactions is **greater than $10,000**
+
+In other words: if someone makes several cash deposits that are each conveniently below $10,000, but together add up to more than $10,000 within 30 days, that's a structuring alert. A single large cash transaction (even $9,999) is not structuring — it takes a *pattern* of multiple sub-threshold transactions.
 
 ### Rule 2: ACH Deviation
 
