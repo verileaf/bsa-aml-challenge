@@ -1,0 +1,13 @@
+customer_id,first_name,last_name,date_of_birth,phone,email,address,city,state,zip
+CUST001,Ada,Lovelace,1815-12-10,202-555-0101,ada.lovelace@example.com,123 Logic Lane,Springfield,IL,62704
+CUST002,Nikola,Tesla,1856-07-10,212-555-0102,nikola.tesla@example.com,456 Induction Ave,New York,NY,10001
+CUST003,Charles,Babbage,1791-12-26,202-555-0104,charles.babbage@example.com,101 Engine Drive,Cambridge,MA,02139
+CUST004,Kenji,Tanaka,1980-09-03,189-555-0120,kenji.tanaka@example.com,808 Willow Bend,Oakdale,WA,98001
+CUST005,Marie,Curie,1867-11-07,312-555-0103,marie.curie@example.com,789 Radiation Road,Chicago,IL,60607
+CUST006,Leonardo,da Vinci,1452-04-15,303-555-0105,leonardo.davinci@example.com,202 Renaissance Way,Florence,CA,90210
+CUST007,Plato,,0428-05-21,606-555-0108,plato@example.com,505 Academy Grove,Athens,GA,30303
+CUST008,Jane,Austen,1775-12-16,909-555-0111,jane.austen@example.com,808 Regency Park,Hampshire,VA,20155
+CUST009,James,Baldwin,1924-08-02,123-555-0114,james.baldwin@example.com,202 Freedom Blvd,Harlem,NY,10027
+CUST010,Sun,Tzu,0544-04-19,808-555-0110,sun.tzu@example.com,707 Strategy Street,San Jose,CA,95113
+CUST011,Mary,Shelley,1797-08-30,112-555-0113,mary.shelley@example.com,101 Gothic Manor,Portland,OR,97201
+CUST012,Hypatia,of Alexandria,0355-01-01,707-555-0109,hypatia@example.com,606 Library Lane,Alexandria,VA,22301
