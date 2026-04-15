@@ -130,7 +130,7 @@ If you finish the core task and want to go further:
 
 ## Time Expectation
 
-This challenge is designed to take **2–4 hours**. Focus on correctness and clear communication of your findings over code elegance.
+This challenge is designed to take **1 hour**. Focus on correctness and clear communication of your findings over code elegance.
 
 ## Submission
 
